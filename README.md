@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/status-active-brightgreen" alt="status">
   <img src="https://img.shields.io/badge/built%20with-HTML5%20%7C%20CSS3%20%7C%20JavaScript-yellow" alt="tech">
   <img src="https://img.shields.io/badge/dependencies-none-blue" alt="dependencies">
-  <img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="license">
+  <img src="https://img.shields.io/badge/license-none-lightgrey" alt="license">
   <img src="https://img.shields.io/badge/platform-web-orange" alt="platform">
 </p>
 
@@ -32,7 +32,6 @@
 - [Controls](#-controls)
 - [How It Works](#-how-it-works)
 - [Original vs. Redux Comparison](#-original-vs-redux-comparison)
-- [Screenshots](#-screenshots)
 - [Future Scope](#-future-scope)
 - [Team](#-team)
 - [Acknowledgements](#-acknowledgements)
@@ -196,13 +195,6 @@ Optionally, for live-reload while editing, open the folder in VS Code and use th
 | Fixed low resolution, desktop-only | Responsive canvas, phone to desktop, touch-ready |
 | No progress saving | Level unlocks, best times, and high scores saved locally |
 | Flat EGA color blocks | Neon palette, parallax, particles, optional CRT filter |
-
----
-
-## 🖼 Screenshots
-
-> _Add gameplay screenshots or a short GIF here once available, e.g.:_
-> `![Gameplay](./screenshots/gameplay.png)`
 
 ---
 
