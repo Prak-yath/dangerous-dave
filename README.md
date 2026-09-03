@@ -1,12 +1,5 @@
 # 🕹️ Dangerous Dave — 2026 Redux
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-active-brightgreen" alt="status">
-  <img src="https://img.shields.io/badge/built%20with-HTML5%20%7C%20CSS3%20%7C%20JavaScript-yellow" alt="tech">
-  <img src="https://img.shields.io/badge/dependencies-none-blue" alt="dependencies">
-  <img src="https://img.shields.io/badge/license-none-lightgrey" alt="license">
-  <img src="https://img.shields.io/badge/platform-web-orange" alt="platform">
-</p>
 
 <p align="center">
   A from-scratch modern reimagining of the 1988 platformer classic, rebuilt with modern physics, responsive controls, accessibility features, and a retro-neon visual style.
