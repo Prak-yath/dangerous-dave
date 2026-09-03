@@ -1,229 +1,303 @@
-# 🕹️ Dangerous Dave — 2026 Redux
+🕹️ Dangerous Dave — 2026 Redux
+A from-scratch modern reimagining of the 1988 platformer classic, rebuilt with modern physics, responsive controls, accessibility features, and a retro-neon visual style.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/status-active-brightgreen" alt="status">
-  <img src="https://img.shields.io/badge/built%20with-HTML5%20%7C%20CSS3%20%7C%20JavaScript-yellow" alt="tech">
-  <img src="https://img.shields.io/badge/dependencies-none-blue" alt="dependencies">
-  <img src="https://img.shields.io/badge/license-none-lightgrey" alt="license">
-  <img src="https://img.shields.io/badge/platform-web-orange" alt="platform">
-</p>
+🎮 About the Game
+Dangerous Dave — 2026 Redux is a from-scratch reimagining of the classic 1988 platformer.
 
-<p align="center">
-  An enhanced, from-scratch reimagining of the 1988 platformer classic <b>Dangerous Dave</b> — rebuilt with modern movement physics, accessibility features, mobile support, and significantly improved game feel.
-</p>
+The project keeps the core idea of cave exploration and platforming while introducing modern game-feel improvements such as acceleration-based movement, coyote time, jump buffering, checkpoints, optional collectibles, power-ups, responsive controls, and local progress saving.
 
-<p align="center">
-  <b><a href="https://prak-yath.github.io/dangerous-dave/">▶ Play the Live Demo</a></b>
-</p>
+The game runs completely in the browser and requires no installation, account, internet connection, or external game engine.
 
----
+✨ Features
+🏃 Core Gameplay
+Physics-driven platforming
+Acceleration and friction-based movement
+Coyote time and jump buffering
+Optional trophy collectibles
+Trophy combo multiplier and completion bonus
+Rechargeable jetpack
+Pickup-able gun
+Ground and flying enemies
+Spikes and lava hazards
+Lives and mid-level checkpoints
+Temporary invulnerability after taking damage
+Sign-posted warp shortcut
+🗺️ Levels & Progression
+The game contains 4 hand-built levels:
 
-## 📑 Table of Contents
+Cave Entrance
+The Lower Shaft
+Jetpack Ascent
+Deep Warp Zone
+Each level has its own palette, hazards, pacing, and challenges.
 
-- [About the Project](#-about-the-project)
-- [Problem Statement](#-problem-statement)
-- [Objectives](#-objectives)
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Project Structure](#-project-structure)
-- [Getting Started](#-getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Controls](#-controls)
-- [How It Works](#-how-it-works)
-- [Original vs. Redux Comparison](#-original-vs-redux-comparison)
-- [Future Scope](#-future-scope)
-- [Team](#-team)
-- [Acknowledgements](#-acknowledgements)
-- [License](#-license)
+Additional progression features include:
 
----
+Level-select map
+Level lock/unlock states
+Best-time tracking
+Bronze, Silver, and Gold medals
+Run recap showing time, deaths, and score
+Local progress saving
+Persistent high scores
+🎯 Controls
+Input
 
-## 📖 About the Project
+Action
 
-**Dangerous Dave — 2026 Redux** is a browser-based, side-scrolling cave-exploration platformer inspired by the 1988 DOS classic *Dangerous Dave* by John Romero. Rather than emulating the original's assets, this project is a **complete ground-up rebuild** — every sprite, sound, level, and physics system is written from scratch using only native web technologies.
+W / A / S / D
 
-The goal was twofold:
-1. Recreate the core experience that made the original memorable — cave exploration, trophy collecting, a jetpack sequence, and a simple gun mechanic.
-2. Systematically identify and fix the usability, accessibility, and design shortcomings that a 2026 audience would find frustrating in a nearly 40-year-old game.
+Move, jump, duck
 
-The result is a fully playable, responsive, offline-capable game delivered as a **single HTML file** with zero external dependencies.
+Arrow Keys
 
----
+Move and jump
 
-## ❓ Problem Statement
+Space
 
-Classic 1980s/90s platformers, while historically significant, exhibit several design and technical limitations by modern standards:
+Jump / Jetpack flight
 
-- Movement feels stiff, with no acceleration or deceleration curves
-- Hitboxes are pixel-perfect and unforgiving, leading to "unfair" deaths
-- A single hit often forces a full level restart, with no checkpoint system
-- Controls are hardcoded to arrow keys only, with no remapping and no mobile support
-- There is no pause menu, difficulty setting, volume control, or accessibility options
-- Progress is never saved between sessions
-- Mandatory collectible requirements (e.g., "collect all trophies to open the door") can trap players and force tedious backtracking
+F / J
 
-This project addresses each of these issues directly, using the original game as a case study in platformer UX design evolution.
+Fire gun
 
----
+P / Esc
 
-## 🎯 Objectives
+Pause
 
-- Rebuild a classic platformer's core mechanics using only HTML5 Canvas and vanilla JavaScript (no game engine)
-- Apply modern game-feel principles: acceleration-based movement, coyote-time, jump-buffering, and forgiving collision detection
-- Design an accessible experience: difficulty modes, high-contrast mode, reduced-motion support, and full keyboard + touch input
-- Implement a save/progress system using browser storage
-- Document every design decision as a direct comparison against the shortcomings of the original
+R
 
----
+Restart from checkpoint
 
-## ✨ Features
+Touch Controls
 
-### Core Gameplay
-- Physics-driven platforming with acceleration/friction, coyote-time, and jump-buffering
-- Optional trophies that add score and build a combo multiplier — never mandatory to progress
-- Rechargeable jetpack for free-flight sections
-- Pickup-able gun for shooting enemies
-- Lives system with mid-level checkpoint flags and post-hit invulnerability frames
-- Patrolling and flying enemies with readable, learnable movement patterns
-- Forgiving hazard hitboxes (spikes, lava) shrunk from the visible sprite
-- A visibly sign-posted warp shortcut on one level
+D-pad, jump and fire buttons
 
-### Levels & Progression
-- 4 hand-built levels, each with a distinct palette and pacing
-- Level-select screen showing lock state, best time, and medal earned
-- Bronze / Silver / Gold medal system based on completion time vs. a par time
-- Persistent progress: level unlocks, best times, and high scores saved locally
+Touch controls automatically appear on mobile devices.
 
-### Accessibility & Difficulty
-- Easy / Normal / Hardcore difficulty modes
-- High-contrast player sprite option
-- Reduce-motion toggle for particle effects
-- Independent screen-shake toggle
-- Independent music and SFX volume sliders with instant mute
+♿ Accessibility & Difficulty
+Accessibility
+High-contrast player sprite
+Reduce-motion option
+Independent screen-shake toggle
+Music volume control
+SFX volume control
+Instant mute
+Difficulty Modes
+Mode
 
-### Controls & Platform Support
-- Full WASD **and** Arrow-key support simultaneously
-- On-screen touch controls that auto-appear on mobile devices
-- Fully responsive canvas — scales cleanly from phone to desktop
+Lives
 
-### Presentation
-- Neon cave color palette with parallax depth layers
-- Screen shake, hit-flash, and particle effects for game feel
-- Optional retro CRT scanline filter
-- All audio procedurally synthesized live via the Web Audio API — zero audio files
+Checkpoints
 
----
+Enemy Speed
 
-## 🛠 Tech Stack
+🟢 Easy
 
-| Layer | Technology |
-| --- | --- |
-| Rendering | HTML5 `<canvas>` (2D context) |
-| Logic | Vanilla JavaScript (ES6+) |
-| Styling | CSS3 |
-| Audio | Web Audio API (procedural synthesis) |
-| Persistence | Browser `localStorage` |
-| Build tooling | None — no bundler, framework, or external library required |
+5
 
-This project deliberately avoids frameworks and game engines to demonstrate that a complete, polished game loop — physics, rendering, audio, state management, and UI — can be built with core web platform APIs alone.
+Yes
 
----
+Normal
 
-## 📂 Project Structure
+🟡 Normal
 
-```
-dangerous-dave/
+3
+
+Yes
+
+Normal
+
+🔴 Hardcore
+
+1
+
+No
+
+Faster
+
+🎨 Visual & Audio Design
+The game uses a neon cave aesthetic with:
+
+Parallax depth layers
+Glowing trophies
+Animated jetpack particle trails
+Particle effects
+Screen shake
+Hit flashes
+Pickup and kill effects
+Optional CRT scanline filter
+Responsive canvas scaling
+All visuals are rendered live without image assets.
+
+Audio is also generated live in the browser using the Web Audio API, meaning the game does not require external sound files.
+
+💾 Progress Saving
+Game progress is stored locally using the browser’s Local Storage API.
+
+The following information can persist between sessions:
+
+Unlocked levels
+Best times
+High scores
+📱 Responsive & Offline
+The game is designed to work across:
+
+💻 Desktop
+📱 Mobile
+🌐 Modern browsers
+It uses a fixed internal resolution of 960 × 540, which is fluidly scaled to fit different screen sizes.
+
+The entire game is contained in a single HTML file and can run completely offline.
+
+🛠️ Technical Stack
+Technology
+
+Purpose
+
+HTML5 Canvas
+
+Game rendering
+
+Vanilla JavaScript
+
+Game logic and mechanics
+
+Web Audio API
+
+Procedural sound and music
+
+Local Storage
+
+Save data
+
+CSS
+
+Responsive display and interface
+
+No External Dependencies
+The project intentionally avoids:
+
+❌ Game engines
+❌ Build systems
+❌ External game libraries
+❌ Image assets
+❌ Audio files
+❌ Internet connection
+🔄 Original vs. 2026 Redux
+1988 Original
+
+2026 Redux
+
+Arrow keys only
+
+WASD + Arrow keys + Touch
+
+Stiff movement
+
+Acceleration + friction physics
+
+Basic jumping
+
+Coyote time + jump buffering
+
+One hit resets the level
+
+Lives + checkpoints
+
+Trophies required
+
+Trophies are optional
+
+No pause/settings
+
+Full pause menu + settings
+
+Desktop-focused
+
+Responsive mobile + desktop
+
+No progress saving
+
+Local progress saving
+
+Flat EGA visuals
+
+Neon visuals + particles + parallax
+
+Limited feedback
+
+Screen shake + hit effects
+
+No modern audio system
+
+Procedural Web Audio
+
+🚀 Getting Started
+Option 1 — Run Locally
+Clone the repository:
+git clone https://github.com/YOUR-USERNAME/dangerous-dave-2026-redux.git
+Open the project folder.
+Open the .html file in a modern web browser.
+That’s it.
+
+No installation or build process is required.
+
+Option 2 — Play Offline
+Because the game is delivered as a single HTML file, you can simply keep the file on your device and open it whenever you want to play.
+
+📂 Project Structure
+dangerous-dave-2026-redux/
 │
-├── index.html          # Entire game: markup, styles, and game logic in one file
-└── README.md            # Project documentation
-```
+├── index.html
+└── README.md
+The game is designed as a single-file HTML project, keeping deployment simple and portable.
 
-The game is intentionally kept as a single self-contained file so it can be run, shared, or hosted with zero setup.
+🧪 Current Status
+Version: 2026 Redux
 
----
+Implemented
+☑ Platforming physics
+☑ Coyote time
+☑ Jump buffering
+☑ Trophies and scoring
+☑ Jetpack
+☑ Gun
+☑ Enemies
+☑ Hazards
+☑ Lives
+☑ Checkpoints
+☑ Warp shortcut
+☑ Four levels
+☑ Level selection
+☑ Medals
+☑ Progress saving
+☑ Touch controls
+☑ Accessibility options
+☑ Difficulty modes
+☑ Procedural audio
+☑ CRT filter
+☑ Responsive display
+🔮 Future Improvements
+Possible future additions include:
 
-## 🚀 Getting Started
+🎨 Dedicated CGA/EGA retro palette mode
+🎮 Gamepad support
+👹 Final-level boss fight
+🧱 In-browser level editor
+🌐 Custom level sharing
+📜 Inspiration
+This project is inspired by the original Dangerous Dave, while being rebuilt from scratch with a modern approach to gameplay, controls, accessibility, presentation, and browser technology.
 
-### Prerequisites
+The goal is not simply to reproduce the original game, but to explore how a classic platformer could feel if redesigned for modern players.
 
-- Any modern web browser (Chrome, Edge, Firefox, Safari)
-- No installation, package manager, or build tools required
+📄 License
+Add your chosen license here, for example:
 
-### Installation
+MIT License
+If this project uses original copyrighted assets, code, music, or other material from the original game, make sure the repository’s licensing and distribution terms are appropriate.
 
-1. Download or clone this repository.
-2. Open `index.html` directly in your browser — that's the entire setup.
+👨‍💻 Author
+Prakyath Nayak
 
-Optionally, for live-reload while editing, open the folder in VS Code and use the **Live Server** extension.
-
----
-
-## 🎮 Controls
-
-| Input | Action |
-| --- | --- |
-| `W` `A` `S` `D` or Arrow Keys | Move left/right, jump, duck |
-| `Space` / `W` / `↑` | Jump — hold to fly once the jetpack is found |
-| `F` / `J` | Fire gun (once picked up) |
-| `P` / `Esc` | Pause |
-| `R` | Restart from the last checkpoint |
-| On-screen D-pad / buttons | Full touch equivalent, auto-shown on mobile |
-
----
-
-## ⚙️ How It Works
-
-- **Game loop:** driven by `requestAnimationFrame`, with delta-time-based physics so movement speed stays consistent across different frame rates.
-- **Physics:** the player has horizontal acceleration and friction rather than instant velocity changes; jump timing uses coyote-time (a short grace window after leaving a platform) and jump-buffering (registering a jump input slightly before landing).
-- **Collision detection:** axis-aligned bounding box (AABB) checks against level geometry, with hitboxes intentionally inset from the visible sprite to keep near-misses feeling fair.
-- **Level data:** each level is defined as a structured JavaScript object describing platform positions, hazards, enemy patrol paths, collectibles, and the exit door — making levels easy to extend or add to.
-- **State & persistence:** game state (lives, score, current checkpoint) is held in memory during play; unlocked levels, best times, and high scores are written to `localStorage` so progress survives a page refresh.
-- **Audio:** every sound effect and music note is generated at runtime using Web Audio API oscillators — there are no `.mp3` or `.wav` files in the project.
-
----
-
-## 🔄 Original vs. Redux Comparison
-
-| 1988 Original | 2026 Redux |
-| --- | --- |
-| Arrow keys only | WASD + Arrows + full touch controls |
-| Stiff, floaty movement | Acceleration/friction physics, coyote-time, jump-buffering |
-| One hit resets the whole level | Lives, mid-level checkpoints, brief invulnerability |
-| All trophies mandatory to open the door | Trophies are optional bonus score — the door is always open |
-| No pause, no settings, no volume control | Full pause menu, music/SFX sliders, mute |
-| Fixed low resolution, desktop-only | Responsive canvas, phone to desktop, touch-ready |
-| No progress saving | Level unlocks, best times, and high scores saved locally |
-| Flat EGA color blocks | Neon palette, parallax, particles, optional CRT filter |
-
----
-
-## 🔮 Future Scope
-
-- [ ] Dedicated CGA/EGA retro color-palette mode
-- [ ] Native gamepad support
-- [ ] Boss encounter for the final level
-- [ ] In-browser level editor for building and sharing custom levels
-- [ ] Online leaderboard for best times
-
----
-
-## 👥 Team
-
-| USN | Name |
-| --- | --- |
-| NNM23IS129 | Prakyath P Nayak |
-| NNM23IS131 | Pranav P Nayak |
-
----
-
-## 🙏 Acknowledgements
-
-- Inspired by *Dangerous Dave* (1988), created by John Romero and Id Software's founding team, published by Softdisk.
-- Built as an educational exercise in game-loop architecture, platformer physics, and web-native audio/visual synthesis.
-
----
-
-## 📄 License
-
-No license has been added yet. If this project is intended to be shared or reused publicly, consider adding an [MIT License](https://choosealicense.com/licenses/mit/) or similar.
+Built as a browser-based game development project using vanilla HTML5, CSS, and JavaScript.
