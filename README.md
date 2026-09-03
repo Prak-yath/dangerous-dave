@@ -51,14 +51,6 @@ The game runs completely in the browser and requires no installation, account, i
 
 ---
 
-## 🖼 Screenshots
-
-| Title Screen | Gameplay — Jetpack Ascent |
-| --- | --- |
-| ![Title Screen](./screenshots/title-screen.png) | ![Jetpack Ascent Gameplay](./screenshots/jetpack-ascent-gameplay.png) |
-
----
-
 ## ✨ Features
 
 ### 🏃 Core Gameplay
